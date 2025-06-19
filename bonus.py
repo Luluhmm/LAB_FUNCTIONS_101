@@ -10,6 +10,10 @@ Rewrite the previous function so that it returns the pattern as a string, then a
 # print(numberstr)
 
 def countdown(number):
+    '''
+    This function will display random number countdown that is taken from the user,
+    the intresting part is that it will display the numbers as a string!
+    '''
     result = ""
     while number > 0:
         for i in range(number,0,-1):
@@ -23,3 +27,4 @@ def countdown(number):
 number = int(input("Please enter a number: "))
 #countdown(number)
 print(countdown(number))
+print(countdown.__doc__)

@@ -19,12 +19,13 @@ then it prints out the result formatted like the following patter (if we give it
 
 
 #defining the function
-def caclulate(number):
+def calculate(number):
+    """
+    This function will take a number from the user and then will display a countdown for that number in a pretty way
+    """
     while number > 0:
         for i in range(number,0,-1):
            print(i,end=" ")
-        
-
 
         print()
         number-=1
@@ -32,6 +33,7 @@ def caclulate(number):
 
 #call the function
 number = int(input("Please enter a number: "))
-caclulate(number)
+calculate(number)
+print(calculate.__doc__)
    
         
